@@ -11,7 +11,7 @@ The distributions of training data features were analyzed based on visual inspec
 
 Based on visual inspection, it became clear that many of the values for some of the features were either null or zero.  For example, capital losses and gains were zero for over 95% of individuals.  If a feature had over 80% missing or zero variables, they were considered for exclusion as they would likely not contribute greatly to predicting earnings.
 
-The distribution of the earnings variable was tested at the different levels of these features in order to check whether there were significant differences between the zero/null group and the non-zero/non-null group.  Levene&#39;s test1 was used.  Levene&#39;s test is less sensitive to normality assumptions than either Barlett&#39;s or an F-test.
+The distribution of the earnings variable was tested at the different levels of these features in order to check whether there were significant differences between the zero/null group and the non-zero/non-null group.  Levene&#39;s test<sup>1</sup> was used.  Levene&#39;s test is less sensitive to normality assumptions than either Barlett&#39;s or an F-test.
 
 Extreme values of continuous variables were also inspected (i.e. those more than 2 standard deviations from the mean).  If a small portion of individuals showed extreme values on any variable, they would be dropped from the sample.
 
@@ -39,8 +39,6 @@ Though the Random Forest appeared to be the most predictive model on a hold-out 
 
 From Levene&#39;s test, it appears that features related to filer status and gender had major variations in the numbers of people who earned $50,000 at different levels.  Gender variation seems reasonable, considering there is substantial research indicating gender is related to earnings.  Status as a &quot;non-filer&quot; appears to be related to earnings, which may suggest incompleteness in data.  If someone is a non-filer, their characteristics may be incorrectly or incompletely reported in the data.  Additional analysis would be warranted before using the model in production, as those without accurate or with out-of-date information should be treated differently from complete-cases.
 
-1
-
 #
 
-Levene, H. (1960). In _Contributions to Probability and Statistics: Essays in Honor of Harold Hotelling_, I. Olkin et al. eds., Stanford University Press, pp. 278-292.
+<sup>1</sup> Levene, H. (1960). In _Contributions to Probability and Statistics: Essays in Honor of Harold Hotelling_, I. Olkin et al. eds., Stanford University Press, pp. 278-292.
