@@ -3,7 +3,7 @@ _Ben Batorsky_
 
 ### Introduction
 
-This document outlines the construction of a model to predict probability of earning at least 50,000 in a year using 1994 and 1995 census data from 200,000 individuals.  The census data includes information on demographics, employment and financial status.  The model trained on these 200,000 individuals was then tested on a set of X individuals in order to measure the prediction accuracy
+This document outlines the construction of a model to predict probability of earning at least 50,000 in a year using 1994 and 1995 census data from 200,000 individuals.  The census data includes information on demographics, employment and financial status.  The model trained on these 200,000 individuals was then tested on a set of 100k individuals in order to measure the prediction accuracy
 
 ### Methods
 
