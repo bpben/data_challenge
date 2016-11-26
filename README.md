@@ -23,14 +23,14 @@ Both models were implemented with allowances for imbalance in the target variabl
 
 Due to insignificant differences in the distribution of the earnings variable, the features wage per hour, reason for unemployment and veteran&#39;s income questionnaire were dropped from the data.  Also, 2% of the individuals from the training data were dropped due to extreme values for capital gains/losses or earnings from stocks were dropped from the training set.  These individuals likely represented a small portion of the population and would not be useful for prediction.
 
-_Figure 1: % zero/null by 
+_Figure 1: % zero/null for each feature_
 ![](./figures/zeros_chart.png )
 
 The results of the randomized gridsearch indicated that the performance of Logistic Regression and Random Forest were not much different (AUC  of .92 and .91, respectively).  L1-regularization was chosen for Logistic Regression and trees for the Random Forest model were fit on 20% subsamples of the features (i.e. 26 features).
 
 Despite this minor difference in performance on the validation set, Random Forest actually appeared to outperform Logistic Regression on the test set.  This is likely due to the Logistic Regression overfitting on too many features (i.e. 130 features).
 
-_Figure 2: ROC curve for predictive models
+_Figure 2: ROC curve for predictive models_
 ![](./figures/roc.png )
 
 ### Discussion
