@@ -1,4 +1,4 @@
-## Dataiku Data Challenge: Predicting earnings
+## Data Challenge: Predicting earnings
 _Ben Batorsky_
 
 ### Introduction
